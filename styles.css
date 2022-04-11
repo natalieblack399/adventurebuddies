@@ -1,0 +1,315 @@
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* box model fix here */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* --- BODY --- */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    color: #272421;
+    background-image: url(images/background4.gif);
+    background-repeat: repeat-x;
+    font-size: 16px;
+}
+
+#wrap {
+    max-width: 910px; 
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000;
+}
+/* --- HEADER --- */
+
+header {
+    background-color:floralwhite;
+    background-image: url(images/logo1.png);
+    background-repeat: no-repeat;
+}
+header h1 {
+    color: #272421;
+    padding: 1rem 0 0 5rem;
+    font-size: 2.1rem;
+}
+header h2 {
+    color: #272421;
+    padding-left: 5.5rem;
+    padding-bottom: .5rem;
+    font-size: .75rem;
+    letter-spacing: 1.9px;
+}
+
+/* --- NAVIGATION --- */
+
+/* phone nav here */
+@media only screen and (max-width: 600px) {
+    nav {
+    background-color: #A6B9C9;
+    padding: .5rem 2%;
+    }
+    nav ul.mynav {
+    list-style-type: none;
+    padding: 0;
+}
+    nav ul.mynav li a {
+    padding: .2rem 1rem;
+    margin-bottom: .5rem;
+    background-color: #903436;
+    background: linear-gradient(to bottom, #993333 0%, #6C2B2C 100%);
+    color: #A49B8C;
+    text-decoration: none;
+    display: block;
+    border: solid 1px #272421;
+    border-radius: .5rem;
+}
+    nav ul.mynav li.active a {
+    background-color: #30495A;
+    background: linear-gradient(to bottom, #566A78 0%, #263945 100%);
+    color: burlywood;
+    }
+    nav ul.mynav li a:hover {
+    background-color: bisque;
+    background: linear-gradient(to bottom, #bfab93 0%, #ffe9d0 100%);
+    color: #272421;
+    }
+}/* end phone */
+
+/* desktop nav here */
+@media only screen and (min-width: 601px) {
+    nav{
+    background-color: #903436;
+    background: linear-gradient(to bottom, #993333 0%, #6C2B2C 100%);
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+nav ul.mynav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul.mynav li{
+    float: left;
+}
+nav ul.mynav li a {
+    display: block;
+    padding: .5rem 1.5rem;
+    color: #A49B8C;
+    text-decoration: none;
+    border-right: solid 1px #272421;
+}
+nav ul.mynav li.active a {
+    background-color: #30495A;
+    background: linear-gradient(to bottom, #566A78 0%, #263945 100%);
+    color:burlywood
+}
+nav ul.mynav li a:hover {
+    background-color:bisque;
+    color: #272421;
+}
+.keepOpen {
+    clear:both;
+}
+}/* end desktop */
+
+
+
+/* --- MAIN --- */
+
+main {
+    padding: .5rem 2%;
+    background-color: rgb(255, 255, 255);
+}
+main h1 {
+    font-size: 2rem;
+    color:#272421;
+    border-bottom: 1px solid grey;
+    margin-bottom: .4rem;
+}
+main h2 {
+    font-size: 1.5rem;
+    color:#272421;
+    margin-bottom: .2rem;
+}
+main p {
+    padding-bottom: .8rem;
+    line-height: 150%;
+}
+main blockquote {
+    font-style: italic;
+    margin: .4rem 2%;
+    font-size: .9rem;
+}
+main a {
+    color: #903436;
+}
+main a:hover {
+    color: #6E8DA6;
+}
+
+/* MAP */
+iframe.map {
+    border: 1px solid #666;
+    width:96%;
+    margin-left: 2%;
+    height: 500px;
+}
+
+/* TABLE */
+table.table {
+   border-collapse: collapse;
+    font-size: .8rem;
+    border: 1px solid #666;
+    margin: 0 1% 1rem 1%;
+}
+table.table th {
+    text-align: left;
+    background-color: #30495A;
+    color: #aaa;
+    font-size: 1.5rem;
+    padding: .1rem .5rem;
+}
+table.table td {
+    padding: .5rem;
+}
+table.table tr:nth-child(even) {
+    background-color: #dfdfdf;
+}
+table.table tr:hover {
+    background-color:#855;
+    color:#333;
+}
+
+/* VIDEO FROM YOUTUBE */
+iframe.video {
+    width: 98%;
+    margin-left: 1%;
+    height:320px;
+    margin-bottom: 1rem;
+}
+/* --- LISTS --- */
+
+main ul.parks, main ol.favorites, main ul.contact {
+    margin: 0 0 .8rem 0;
+    padding: 0 0 0 1.5rem;
+}
+.parks li{
+    background-image:  url(images/park2.png);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    padding-left: 20px;
+}
+.favorites {
+    list-style-image: url(images/fav2.png);
+}
+.contact {
+   list-style-type: circle; 
+}
+main dl dt {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0 0 0 1rem;
+}
+main dl dd {
+    font-size: .9rem;
+    margin: 1px;
+    padding: 0 0 .75rem .2rem;
+}
+.words {
+    color:darkgreen;
+    background-color: rgb(161, 206, 242);
+    border: solid 3px #30495A;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* --- IMAGES --- */
+
+figure.utah {
+    float: right;
+    width:33.333%;
+    border: 1px solid #30495A;
+    margin: 0 0 .25em 2%;
+}
+figure.utah img {width: 100%;}
+figure.utah figcaption {
+    text-align: center;
+    font-size: .7rem;
+    color: #272421;
+}
+main div.myGallery {
+    display:flex;
+    flex-wrap: wrap;
+}
+main div.myGallery figure {
+    border: 1px solid #30495A;
+    padding-top: 4px;
+    text-align: center;
+    height: 235px;
+    width: 210px;
+    background-color: #6E8DA6;
+    color: #272421;
+}
+
+
+/* --- FORM --- */
+
+form.information fieldset {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color:#30495A;
+}
+
+form.information legend {
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+form.information span {
+    display: block;
+    padding: .8rem 0 0 .3rem;
+}
+
+form.information .info {
+    width: 20rem;
+    color: #6E8DA6;
+    border-radius: .6rem;
+    border: solid 1px #30495A;
+    padding: .4rem;
+
+}
+
+form.information .select {
+    width: 8rem;
+    color: #30495A;
+    border-radius: .6rem;
+    border: solid 1px #30495A;
+    padding: .4rem;
+}
+
+form.information .submitbutton {
+    width: 10rem;
+    color: #A49B8C;
+    border: solid 1px #272421; 
+    border-radius: .6rem;
+    padding: .8rem;
+    margin-left: 2%;
+    background: #903436;
+}
+/* --- FOOTER --- */
+
+footer {
+    background-color: #6E8DA6;
+}
+footer h6 {
+    text-align: center;
+    color:#272421;
+    padding: .5rem;
+    font-size: .8rem;
+}
