@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Adventure buddies: Find Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+    </head>
+
+<body>
+    <div id="wrap">
+    <header>
+     <h1>ADVENTURE BUDDIES</h1>
+     <h2>Find your next adventure with help from your ABS</h2>
+    </header>
+    <nav>
+        <ul class="mynav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="active"><a href="findus.html">Find Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+    </nav>
+    <main>
+    <h1>Have questions or comments for Us? <br> Fill this out!</h1>
+
+   <form action="thanks.html" method="POST" enctype="multipart/form-data" name="contact" class="information">
+       <fieldset>
+            <legend>Personal Info</legend>
+           <label><span>Name:</span><input type="text" name="name" placeholder="first name" required class="info"></label>
+           
+           <label><span>Email:</span><input type="email" name="email" placeholder="example@gmail.com" required class="info"></label>
+           
+           <label><span>Phone:</span><input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9-. ]{10,14}" class="info"></label>
+           
+           <label><span>Instagram:</span><input type="text" name="insta" placeholder="@example_handle" class="info"></label>
+           
+           <label><span>Facebook:</span><input type="text" name="fb" placeholder="@example_handle" class="info"></label>
+           
+       </fieldset>
+       
+       <fieldset>
+            <legend>About You!</legend>
+           <span>Have you been to Utah before?</span>
+           <label><input type="radio" name="utah" value="yes" required>yes</label><br>
+           <label><input type="radio" name="utah" value="no" required>no</label>
+           
+           <span>What adventures have you done before?</span>
+           <label><input type="checkbox" name="sky1" value="Skydiving">Skydiving</label><br>
+           <label><input type="checkbox" name="glide1" value="Paragliding">Paragliding</label><br>
+           <label><input type="checkbox" name="raft1" value="Rafting">Rafting</label><br>
+           <label><input type="checkbox" name="hike1" value="Hiking">Hiking</label><br>
+           <label><input type="checkbox" name="bike1" value="Biking">Biking</label><br>
+           <label><input type="checkbox" name="rock1" value="Rock Climbing">Rock Climbing</label><br>
+           <label><input type="checkbox" name="none1" value="none">none</label>
+           
+           <span>Are any of our adventures are on your bucket list?</span>
+           <label><input type="checkbox" name="all" value="all">all</label><br>
+           <label><input type="checkbox" name="some" value="a few">a few</label><br>
+           <label><input type="checkbox" name="none2" value="none">none</label>
+           
+       </fieldset>
+        
+       <fieldset>
+            <legend>Questions and Comments</legend>
+           <span>What are your questions/comments about?</span>
+           <label><input type="checkbox" name="adv" value="The Adventures">The Adventures</label><br>
+           <label><input type="checkbox" name="utah" value="Utah">Utah</label><br>
+           <label><input type="checkbox" name="us" value="Us">Us</label><br>
+           <label><input type="checkbox" name="gen" value="General">General</label><br>
+           <label><input type="checkbox" name="other" value="Other">Other</label>
+           
+           <span>Ask/Comment below.</span>
+           <textarea name="questions" required class="info"></textarea>
+           
+           <span>How would you like us to respond to you? <br>(we cannot respond unless you give us your info above!)</span>
+           <select name="answer" class="select">
+                <option>email</option>
+                <option>text</option>
+                <option>call</option>
+                <option>Instagram</option>
+                <option>Facebook</option>
+           </select>
+           
+       </fieldset>
+        
+        
+        <input type="submit" name="submit" value="Submit!" class="submitbutton">
+        
+        </form>
+        
+    </main> 
+    <footer>
+        <h6>&copy; 2020 &bull; Utah Valley University &bull; Built by Natalie Black</h6>
+    </footer>
+    </div>
+</body>
+</html>
